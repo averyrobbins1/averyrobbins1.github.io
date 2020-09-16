@@ -1,0 +1,25 @@
+body {
+   width: 80%;
+   margin: auto
+}
+
+header,
+footer {
+   background-color: #192841;
+   color: #f4f4f4;
+
+   font-family: "Comic Sans MS";
+   font-size: 20px;
+   text-align: center;
+}
+
+header {
+   padding: 1.5rem;
+}
+
+img {
+   float: right;
+   margin: 10px;
+   border: 1px solid #000;
+}
+
