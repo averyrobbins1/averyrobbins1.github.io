@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
    width: 80%;
    margin: auto
@@ -23,6 +28,7 @@ header {
 }
 
 nav {
+    margin: 10px;
     line-height: 1.5rem;
 }
 
@@ -34,6 +40,7 @@ footer {
 
 #portal_heading {
     color: #192841;
+    margin: 15px;
 }
 
 a {
