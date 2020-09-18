@@ -19,11 +19,11 @@ header {
 }
 
 footer {
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
-footer a {
-    
+footer a:visited {
+    color:#f4f4f4;;
 }
 
 img {
@@ -31,7 +31,7 @@ img {
    bottom: 115px;
    float: right;
    margin: 15px;
-   border: 1px solid #000;
+   box-shadow: 2px 2px 5px grey;
 }
 
 
