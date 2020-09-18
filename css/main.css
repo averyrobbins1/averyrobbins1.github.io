@@ -1,37 +1,57 @@
 body {
-   width: 80%;
+   width: 60%;
    margin: auto
+}
+
+.container {
+    background-color: whitesmoke;
 }
 
 header,
 footer {
    background-color: #192841;
-   color: #f4f4f4;
+   color: lightgray;
 
    font-family: "Comic Sans MS";
-   font-size: 20px;
    text-align: center;
    border-radius: 10px;
 }
 
 header {
    padding: 0.5rem;
+   font-size: 24px;
 }
 
 footer {
     padding: 1rem;
+    margin-top: 10%;
+    font-size: 16px;
 }
 
-footer a:visited {
-    color:#f4f4f4;;
+#portal_heading {
+    color: #192841;
 }
+
+a {
+    color: steelblue;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+/*
+a:visited {
+    color: lightsteelblue;
+}
+*/
 
 img {
    position: relative;
    bottom: 115px;
    float: right;
    margin: 15px;
-   box-shadow: 2px 2px 5px grey;
+   box-shadow: 3px 3px 10px grey;
 }
 
 
