@@ -1,5 +1,5 @@
 body {
-   width: 60%;
+   width: 70%;
    margin: auto
 }
 
@@ -19,7 +19,11 @@ footer {
 
 header {
    padding: 0.5rem;
-   font-size: 24px;
+   font-size: 20px;
+}
+
+nav {
+    line-height: 1.5rem;
 }
 
 footer {
@@ -51,7 +55,6 @@ img {
    bottom: 115px;
    float: right;
    margin: 15px;
-   margin-top: -15px;
    box-shadow: 3px 3px 10px grey;
 }
 
