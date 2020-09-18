@@ -51,6 +51,7 @@ img {
    bottom: 115px;
    float: right;
    margin: 15px;
+   margin-top: -15px;
    box-shadow: 3px 3px 10px grey;
 }
 
