@@ -5,7 +5,7 @@
 
 body {
    width: 80%;
-   margin: auto
+   margin: auto;
 }
 
 .container {
@@ -28,8 +28,13 @@ header {
 }
 
 nav {
-    margin: 10px;
+    margin: auto;
+    padding: 2rem;
     line-height: 1.5rem;
+}
+
+hr {
+    border-top: 3px solid lightgray;
 }
 
 footer {
