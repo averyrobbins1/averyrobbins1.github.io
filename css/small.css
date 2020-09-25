@@ -6,6 +6,7 @@
 body {
    width: 80%;
    margin: auto;
+   margin-bottom: 400px;
 }
 
 .container {
@@ -17,20 +18,22 @@ header,
 footer {
    background-color: #192841;
    color: lightgray;
-
-   /* font-family: 'Courier Prime', monospace; */
-   /*font-family: "Comic Sans MS";*/
    text-align: center;
    border-radius: 10px;
+
+   /* font-family: 'Courier Prime', monospace; */
+   /*font-family: "Comic Sans MS";*/ 
+   /* try serif for headings and sans serif for body text
+   text-align: center;
+   border-radius: 10px; */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    /* font-family: 'Courier Prime', monospace; */
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 header {
@@ -73,11 +76,11 @@ a:visited {
 }
 */
 
-img {
-   position: relative;
-   float: right;
+header img {
+   /* position: relative; */
    margin: 15px;
    box-shadow: 3px 3px 10px grey;
+   border-radius: 5px;
 }
 
 
