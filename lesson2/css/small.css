@@ -1,0 +1,65 @@
+body {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    font-family: 'Courier Prime', monospace;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1em;
+    background-color: #192841;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    font-size: 0.8em;
+}
+
+main section {
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 0 0 0.5em 0;
+}
+
+.box-content {
+    padding: 1em;
+}
+
+main section h1 {
+    background-color: #192841;
+    color: whitesmoke;
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+main section h2 {
+   font-size: 1.1em;
+}
+
+img {
+    display: block;
+    margin: 0.5em auto;
+    max-width: 100%;
+}
+
+main section img {
+    padding: 1;
+
+    justify-content: center;
+    align-content: center;
+    
+    /* justify-items: center;
+    align-items: center;
+
+    justify-self: center;
+    align-self: center; */
+}
