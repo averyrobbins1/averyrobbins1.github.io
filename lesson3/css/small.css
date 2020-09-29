@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: whitesmoke;
+}
+
+header,
+footer,
+nav ul li a {
+    color: whitesmoke;
+}
+
+header,
+footer {
+    display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+    background-color: lightslategray;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+footer h2 {
+    font-size: 1.25em;
+}
+
+nav {
+    background-color: #192841;
+    box-shadow: 0 2px 15px gray;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: whitesmoke;
+    color: #192841;
+    font-weight: bold;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+/* Tablet Views *********************************/
+
+@media only screen and (min-width: 38em) {
+
+    header h1 {
+        font-size: 2.25em;
+    }
+
+    nav ul {
+        display: flex;
+        width: 80%;
+        margin: auto;
+     }
+    nav ul li { flex: 1 1 100%; }	
+    nav ul li a { font-size: 1.25rem; }
+}
+
+
+/* Desktop Views ********************************/
+
+@media only screen and (min-width: 58em) {
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        width: 70%;
+        margin: auto;
+    }
+    nav ul li a { font-size: 1.5rem; }
+}
