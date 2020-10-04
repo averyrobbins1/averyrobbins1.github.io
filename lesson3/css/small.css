@@ -5,6 +5,8 @@
 body {
     font-family: 'Courier Prime', monospace;
     background-color: whitesmoke;
+    position: relative;
+    min-height: 100%;
 }
 
 header,
@@ -34,6 +36,7 @@ nav {
     background-color: #192841;
     box-shadow: 0 2px 15px gray;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 nav ul {
@@ -43,24 +46,61 @@ nav ul {
     overflow: hidden;
 }
 
-nav ul li a {
+nav ul li a{
     display: block;
     padding: 0.75rem;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    height: 70px;
 }
 
-nav ul li a:hover,
-nav ul li a:active {
+nav ul li a:hover {
     background-color: whitesmoke;
     color: #192841;
     font-weight: bold;
 }
 
+.active a {
+    color: yellow;
+}
+
 section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+
     width: 80%;
     margin: auto;
 }
+
+article {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#header-footer-color {
+    background-color: #778899;
+    color: whitesmoke;
+    padding: 1em;
+}
+
+#nav-color {
+    background-color: #192841;
+    color: whitesmoke;
+    padding: 1em;
+}
+
+#text-and-background {
+    background-color: #f5f5f5;
+    color: #192841;
+    padding: 1em;
+    border: solid #192841;
+}
+
+#site-font {
+    margin: 1em;
+}
+
 
 /* Tablet Views *********************************/
 
