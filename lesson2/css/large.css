@@ -5,15 +5,15 @@
         font-size: 1em;
     }
 
-    main section h1 {
+    main section h2 {
         font-size: 1.6em;
     }
 
-    main section h2 {
+    main section h3 {
         font-size: 1.25em;
      }
 
-     .top-height h2 {
+     .top-height h3 {
         min-height: 44px;
     }
 

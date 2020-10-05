@@ -45,7 +45,7 @@ main section {
     padding: 1em;
 }
 
-main section h1 {
+main section h2 {
     background-color: #192841;
     color: whitesmoke;
     font-size: 1.4em;
@@ -54,7 +54,7 @@ main section h1 {
     border-radius: 10px 10px 0 0;
 }
 
-main section h2 {
+main section h3 {
     font-size: 1.1em;
 }
 
