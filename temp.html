@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp</title>
+</head>
+
+<header id="header"></header>
+
+<body>
+
+    <ul id='meats'>
+        <li>chicken</li>
+        <li>beef</li>
+        <li>pork</li>
+    </ul>
+
+    <!-- forEach -->
+
+    <script>
+        let more_meats = ['firsh', 'turkey', 'exotic mystery']
+        let display_list = document.querySelector('#meats')
+        more_meats.map(meat => {
+            let list_item = document.createElement('li')
+            list_item.innerHTML = meat
+            display_list.appendChild(list_item)
+        })
+    </script>
+
+</body>
+
+</html>

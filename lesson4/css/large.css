@@ -1,0 +1,53 @@
+@media only screen and (min-width: 60em) {
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 60% 40%;
+        padding-top: 2em;
+    }
+
+    .top-row {
+        background-color: #192841;
+    }
+
+    /* header:nth-child(1) {
+        background-color: #192841;
+    } */
+
+    /* header section,
+    header img {
+        background-color: #192841;
+    } */
+
+    header img {
+        grid-column-start: 2;
+    }
+
+    .headings {
+        grid-column: 3 / 6;
+    }
+
+    .headings article {
+        text-align: left;
+    }
+
+    nav {
+        grid-column: 2 / 8;
+        grid-row: 2 / 3;
+    }
+
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
