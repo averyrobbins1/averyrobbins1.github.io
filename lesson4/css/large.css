@@ -1,53 +1,25 @@
 @media only screen and (min-width: 60em) {
 
     header {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 60% 40%;
-        padding-top: 2em;
+        grid-template-columns: repeat(6, 1fr);
+        /* background-color: #192841; */
     }
+    
 
-    .top-row {
-        background-color: #192841;
-    }
-
-    /* header:nth-child(1) {
-        background-color: #192841;
-    } */
-
-    /* header section,
-    header img {
-        background-color: #192841;
-    } */
-
-    header img {
-        grid-column-start: 2;
-    }
-
-    .headings {
-        grid-column: 3 / 6;
-    }
-
-    .headings article {
-        text-align: left;
+    .logo-header {
+        grid-column: 1 / 7;
     }
 
     nav {
-        grid-column: 2 / 8;
+        /* background-color: #778899; */
+        grid-column: 2 / 6;
         grid-row: 2 / 3;
+        padding: 0.25em;
     }
 
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block;
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
+    /* nav {
+        width: 80%;
+        margin: auto;
+    } */
+
 }
