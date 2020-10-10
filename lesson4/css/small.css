@@ -7,7 +7,7 @@
 body {
     font-family: 'Courier Prime', monospace;
     background-color: #192841;
-    color: #f5f5f5;
+    color: #ffffff;
 }
 
 .page-container {
@@ -18,7 +18,7 @@ body {
 
 header, footer {
     background-color: #778899;
-    color: #f5f5f5;
+    color: #ffffff;
 }
 
 header {
@@ -100,7 +100,7 @@ footer ul li p {
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
-	color: #f5f5f5;
+	color: #ffffff;
 	font-weight: 700;
 }
 
