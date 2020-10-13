@@ -1,0 +1,35 @@
+@media only screen and (min-width: 60em) {
+
+    header {
+        grid-template-columns: repeat(6, 1fr);
+        background-color: #778899;
+    }
+    
+    .logo-header {
+        background-color: #192841;
+        grid-column: 1 / 7;
+        /* padding-left: 20em; */
+
+    }
+
+    nav {
+        /* background-color: #778899; */
+        grid-column: 2 / 6;
+        grid-row: 2 / 3;
+        padding: 0.25em;
+    }
+
+    footer {
+        width: 61%;
+        margin: auto;
+    }
+
+    main {
+        width: 65%;
+        margin: auto;
+    }
+
+    main {
+        padding: 1em;
+    }
+}
