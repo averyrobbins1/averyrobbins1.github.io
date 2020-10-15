@@ -1,28 +1,17 @@
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 48em) {
 
-    header {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 60% 40%;
-    }
-
-    .logo-header {
-        background-color: #192841;
-        grid-column: 1 / 5;
-        padding: 1em;
-    }
-
-    nav {
+    /* nav {
         grid-column: 1 / 5;
         grid-row: 2 / 3;
         width: 100%;
         margin: auto;
-    }
+    } */
 
 	.navigation {
         display: flex;
         flex-direction: row;
-	}
+    }
+    
 	.navigation li {
 		display: block; 
         flex: 1 1 auto;
@@ -39,5 +28,26 @@
     
 	.navigation li:first-child {
 		display: none;
-	}
+    }
+
+    .five-day-header {
+        text-align: center;
+        padding: 0.5em;
+
+    }
+
+    div .five-day-forecast{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    div .five-day-forecast div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+    }
+
 }
