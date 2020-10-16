@@ -30,6 +30,25 @@
 		display: none;
     }
 
+
+    .weather-summary {
+        position: relative;
+    }
+    
+    .weather-summary article {
+        position: absolute;
+        top: 4em;
+        left: 2em;
+        padding: .5em;
+        width: 60%;
+        /* the rgba below creates two different opacities of #778899 */
+        background: radial-gradient(rgba(119, 136, 153, .5), rgba(119, 136, 153, .8));
+    }
+
+    .five-day {
+        display: block;
+    }
+
     .five-day-header {
         text-align: center;
         padding: 0.5em;
@@ -48,6 +67,12 @@
         align-items: center;
         justify-content: space-between;
         height: 150px;
+    }
+
+    #preston-lake {
+        width: 60%;
+        float: right;
+        margin-left: 1em;
     }
 
 }

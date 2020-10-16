@@ -37,8 +37,12 @@ header img {
 }
 
 header h1 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin: 0 auto;
+    text-align: center;
+}
+
+header span {
     text-align: center;
 }
 
@@ -145,9 +149,9 @@ main div {
     margin: 0.5em;
 }
 
-.weather-summary {
+/* .weather-summary {
     position: relative;
-}
+} */
 
 .hero-image {
     margin: 0;
@@ -155,18 +159,27 @@ main div {
     height: 100%;
 }
 
-.weather-summary article {
+/* hide whole five block */
+
+/* .weather-summary article {
     position: absolute;
     top: 4em;
     left: 2em;
     padding: .5em;
     width: 60%;
-    /* the rgba below creates two different opacities of #778899 */
     background: radial-gradient(rgba(119, 136, 153, .5), rgba(119, 136, 153, .8));
+} */
+
+.five-day{
+    display: none;
 }
 
-div .five-day-forecast{
-    display: none;
+.article-title {
+    margin-bottom: 0.5em;
+}
+
+#preston-lake {
+    width: 100%;
 }
 
 #copyright,
@@ -183,3 +196,7 @@ div .five-day-forecast{
 /* #copyright-symbol {
     font-size: 1.2em;
 } */
+
+@media only screen and (min-width: 375px) {
+
+}
