@@ -184,7 +184,7 @@ main div {
     width: 100%;
 }
 
-#preston-map {
+.preston-map {
     width: 100%;
 }
 
@@ -203,7 +203,7 @@ main div {
     font-size: 1.2em;
 } */
 
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
 
     .logo-header img {
         display: none;
@@ -212,4 +212,4 @@ main div {
     .logo-header {
         margin: 1em;
     }
-} */
+}
