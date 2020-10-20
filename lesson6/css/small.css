@@ -161,6 +161,10 @@ main div {
     height: 100%;
 }
 
+.weather-summary-list {
+    list-style-type: none;
+}
+
 /* hide whole five block */
 
 /* .weather-summary article {

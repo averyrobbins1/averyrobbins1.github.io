@@ -16,11 +16,6 @@
         padding: 0.5em;
     }
 
-    .weather-summary article {
-        width: 50%;
-    }
-
-
     div .five-day-forecast div{
         min-width: 125px;
     }

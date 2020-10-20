@@ -18,14 +18,17 @@
 
 <body>
     <div class="page-container">
-
         <div class="main-container">
             <div class="hidden">
                 <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
             </div>
             <header>
                 <div class="logo-header">
-                    <img src="images/logo-small.png" alt="Logo for Weather Anything">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/logo-small.png">
+                        <img src="images/logo.png" alt="Logo for Weather Anything">
+                    </picture>
+
                     <section class="headings">
                         <h1>Weather Anything</h1>
                         <span>There's always a silver lining!</span>
@@ -51,11 +54,15 @@
                         <source media="(max-width: 800px)" srcset="images/hero-medium-800.jpg">
                         <img class="hero-image" src="images/hero-large-1400.jpg" alt="Preston, ID hero image.">
                     </picture>
-                    
                     <article>
                         <h3>Weather Summary</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident beatae autem cupiditate
-                            similique assumenda veniam.</p>
+                        <ul class="weather-summary-list">
+                            <li>Currently: Rainy</li>
+                            <li>High: <span id="temperature">48</span>&deg;F</li>
+                            <li>Wind Chill: <span id="wind-chill"></span>&deg;F</li>
+                            <li>Humidity: 95%</li>
+                            <li>Wind Speed: <span id="wind-speed">12</span> mph</li>
+                        </ul>
                     </article>
                 </div>
                 <div class="five-day">
@@ -127,6 +134,7 @@
     </div> <!-- page-container -->
 
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>
