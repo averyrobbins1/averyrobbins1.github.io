@@ -1,5 +1,5 @@
 WebFont.load({
     google: {
-        families: ['Courier Prime', 'monospace']
+        families: ['Courier Prime', 'monospace', 'Staatliches', 'cursive']
     }
 });
