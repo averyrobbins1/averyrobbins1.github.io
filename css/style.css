@@ -67,6 +67,10 @@ a {
     color: steelblue;
 }
 
+footer a {
+    color: lightsteelblue;
+}
+
 a:active {
     color: lightcoral;
 }
