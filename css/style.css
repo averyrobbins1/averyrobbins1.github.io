@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: 'Courier Prime', monospace;
+ }
+
+ .container {
+    background-color: whitesmoke;
+}
+
+header,
+footer {
+    background-color: #192841;
+    color: lightgray;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 1rem;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+header {
+    padding: 0.5rem;
+    font-size: 24px;
+ }
+ 
+ nav {
+     margin: auto;
+     padding: 2rem;
+     line-height: 1.5rem;
+ }
+
+ hr {
+    border-top: 3px solid lightgray;
+}
+
+#portal_heading {
+    color: #192841;
+    margin: 15px;
+}
+
+header img {
+    position: relative;
+    float: right;
+    margin: 15px;
+    box-shadow: 3px 3px 10px grey;
+    border-radius: 5px;
+}
+
+a {
+    color: steelblue;
+}
+
+a:active {
+    color: lightcoral;
+}
