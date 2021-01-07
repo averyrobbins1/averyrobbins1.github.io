@@ -1,0 +1,28 @@
+/* Desktop Views ************************/
+@media only screen and (min-width: 66em) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 1em;
+    }
+
+    main section h2 {
+        font-size: 1.6em;
+    }
+
+    main section h3 {
+        font-size: 1.25em;
+     }
+
+     .top-height h3 {
+        min-height: 44px;
+    }
+
+    section:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    main section {
+        min-width: 265px;
+    }
+
+}
