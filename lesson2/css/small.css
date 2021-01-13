@@ -3,75 +3,115 @@
 }
 
 body {
-    width: 80%;
-    margin: 0 auto 10px auto;
     font-family: 'Courier Prime', monospace;
+    background-color: whitesmoke;
+    position: relative;
+    min-height: 100%;
+}
+
+header,
+footer,
+nav ul li a {
+    color: whitesmoke;
 }
 
 header,
 footer {
-    padding: 1em;
-    background-color: #192841;
-    color: whitesmoke;
-    text-align: center;
-    border-radius: 10px;
-    margin: 0 auto;
-}
-
-header {
-    font-size: 1em;
-    margin-bottom: 0.5em;
+    display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+    background-color: lightslategray;
 }
 
 footer {
-    margin: 0.5em 0 0 0;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em;
-    font-size: 0.8em;
-}
-
-main section {
-    background-color: #eee;
-    border: 1px solid #bbb;
-    border-radius: 10px;
-    padding: 0 0 0.5em 0;
-}
-
-.box-content {
+    flex-flow: row;
+    margin-top: 1em;
     padding: 1em;
 }
 
-main section h2 {
+#main-container {
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+footer h2 {
+    font-size: 1.25em;
+}
+
+nav {
+    background-color: #192841;
+    box-shadow: 0 2px 15px gray;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    background-color: whitesmoke;
+    color: #192841;
+    font-weight: bold;
+}
+
+.active a {
+    color: yellow;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+
+    width: 80%;
+    margin: auto;
+}
+
+article {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#scenarios {
+    text-align: left;
+}
+
+#header-footer-color {
+    background-color: #778899;
+    color: whitesmoke;
+    padding: 1em;
+}
+
+#nav-color {
     background-color: #192841;
     color: whitesmoke;
-    font-size: 1.4em;
-    padding: 10px;
-    margin: 0;
-    border-radius: 10px 10px 0 0;
+    padding: 1em;
 }
 
-main section h3 {
-    font-size: 1.1em;
-}
-
-img {
-    display: block;
-    margin: 0.5em auto;
-    max-width: 100%;
-}
-
-footer a {
-    color: lightsteelblue;
-}
-
-a {
+#text-and-background {
+    background-color: #f5f5f5;
     color: #192841;
+    padding: 1em;
+    border: solid #192841;
 }
 
-a:active {
-    color: lightcoral;
+#site-font {
+    margin: 1em;
 }

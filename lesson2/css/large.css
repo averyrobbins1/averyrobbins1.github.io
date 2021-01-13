@@ -1,28 +1,26 @@
-/* Desktop Views ************************/
-@media only screen and (min-width: 66em) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-        font-size: 1em;
+@media only screen and (min-width: 58em) {
+    
+    header h1 {
+        font-size: 2.5em;
     }
 
-    main section h2 {
-        font-size: 1.6em;
+    nav ul {
+        width: 70%;
+        margin: auto;
+    }
+    nav ul li a { font-size: 1.5rem; }
+
+    nav ul li a{
+        font-size: 1.5rem;
     }
 
-    main section h3 {
-        font-size: 1.25em;
-     }
-
-     .top-height h3 {
-        min-height: 44px;
+	/* section {
+		grid-template-columns: repeat(4, 1fr);
+    } */
+    
+    article:nth-child(3) {
+        width: 74%;
+        margin: auto;
     }
-
-    section:nth-child(3) {
-        grid-column: span 1;
-    }
-
-    main section {
-        min-width: 265px;
-    }
-
+	
 }
