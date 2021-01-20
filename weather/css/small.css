@@ -8,12 +8,14 @@ body {
     font-family: 'Courier Prime', monospace;
     background-color: #192841;
     color: #ffffff;
+    width: 100%;
 }
 
 .page-container {
     min-height: 100vh;
     display:grid;
     grid-template-rows: auto 1fr auto;
+    width: 100%;
 }
 
 header, footer {
@@ -25,7 +27,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1em;
 }
 
 footer {
@@ -38,8 +39,12 @@ header img {
 }
 
 header h1 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin: 0 auto;
+    text-align: center;
+}
+
+header span {
     text-align: center;
 }
 
@@ -65,7 +70,7 @@ footer ul li p {
 }
 
 .ham {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .logo-header {
@@ -89,27 +94,47 @@ footer ul li p {
 	padding: 0;
 }
 .navigation li:first-child {
-	display: block;
+    display: block;
+    padding: 1em;
 }
+
 .navigation li {
-	display: none;
+    display: none;
 }
 
 .navigation a {
 	display: block;
-	padding: 0.75rem;
-	text-align: left;
+	padding: 0.8rem;
+	text-align: center;
 	text-decoration: none;
 	color: #ffffff;
-	font-weight: 700;
+    font-weight: 700;
 }
 
 .navigation a:hover {
-	background-color: #192841;
+    background-color: #f5f5f5;
+    color: #192841;
 }
 
 .responsive li {
-	display: block;
+    display: block;
+}
+
+.navigation .active {
+    color: rgb(227, 238, 131);
+}
+
+.hidden {
+    display: none;
+    background: rgba(255, 165, 0, 1);
+    padding: 1.5em;
+}
+
+.hidden p {
+    color: maroon;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 main {
@@ -126,6 +151,43 @@ main div {
     margin: 0.5em;
 }
 
+/* .weather-summary {
+    position: relative;
+} */
+
+.hero-image {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* hide whole five block */
+
+/* .weather-summary article {
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    padding: .5em;
+    width: 60%;
+    background: radial-gradient(rgba(119, 136, 153, .5), rgba(119, 136, 153, .8));
+} */
+
+.five-day{
+    display: none;
+}
+
+.article-title {
+    margin-bottom: 0.5em;
+}
+
+#preston-lake {
+    width: 100%;
+}
+
+.preston-map {
+    width: 100%;
+}
+
 #copyright,
 #today {
     text-align: center;
@@ -140,3 +202,14 @@ main div {
 /* #copyright-symbol {
     font-size: 1.2em;
 } */
+
+@media only screen and (max-width: 400px) {
+
+    .logo-header img {
+        display: none;
+    }
+
+    .logo-header {
+        margin: 1em;
+    }
+}
