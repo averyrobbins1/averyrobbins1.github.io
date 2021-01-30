@@ -35,6 +35,8 @@ if (today === friday) {
     document.querySelector('.hidden').style.display = "none"
 }
 
+// adjust storm severity rating
+
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }

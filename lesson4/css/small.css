@@ -238,8 +238,9 @@ form input.submit-button {
     max-width: 20rem;
 }
 
-form legend.danger {
-    padding-top: 5px;
+form span.danger {
+    display: block;
+    padding-top: 10px;
 }
 
 form label.top input:required {

@@ -47,12 +47,14 @@
                 </ul>
             </nav>
             <main id="storm-center-main">
-                <h1>Storm Center</h1>
+                <h2>Storm Center</h2>
                 <form method="get" action="thanks.html">
                     <fieldset>
                         <legend>Contact Information</legend>
-                        <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5, }" required></label>
-                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5, }"
+                                required></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                                required></label>
                         <label class="top">Phone Number* <input type="tel" required></label>
                     </fieldset>
 
@@ -69,19 +71,19 @@
                             </datalist>
                         </label>
                         <label class="top"> Storm Severity (1-10):
-                            <input type="range" name="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            <input type="range" name="rating" value="5" min="1" max="10" step="1"
                                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">5</span>
                         </label>
                         <label class="top">Storm Region
                             <select name="storm-region">
                                 <option value="">Select Region</option>
-                                <option value="Preston" name="preston">Preston</option>
-                                <option value="Soda Springs" name="soda-springs">Soda Springs</option>
-                                <option value="Fish Haven" name="fish-haven">Fish Haven</option>
+                                <option value="Preston" id="preston">Preston</option>
+                                <option value="Soda Springs" id="soda-springs">Soda Springs</option>
+                                <option value="Fish Haven" id="fish-haven">Fish Haven</option>
                             </select>
                         </label>
-                        <legend class="danger">User in-danger level:</legend>
+                        <span class="danger">User in-danger level:</span>
                         <label class="sbs"><input type="radio" name="danger-level" value="yes"> Yes</label>
                         <label class="sbs"><input type="radio" name="danger-level" value="maybe">
                             Maybe</label>
@@ -90,7 +92,7 @@
 
                     <fieldset>
                         <legend>Additional Information</legend>
-                        <label>Comments: <textarea name="comments" id="" cols="30" rows="10"></textarea></label>
+                        <label>Comments: <textarea name="comments" cols="30" rows="10"></textarea></label>
                     </fieldset>
 
                     <input type="submit" value="Send Storm Report" class="submit-button">
