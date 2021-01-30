@@ -29,53 +29,6 @@
         justify-content: center;
     }
 
-    .weather-summary {
-        position: relative;
-    }
-    
-    .weather-summary article {
-        position: absolute;
-        top: 4em;
-        left: 2em;
-        padding: .5em;
-        width: 14em;
-        background: radial-gradient(rgba(119, 136, 153, .5), rgba(119, 136, 153, .8));
-    }
-
-    .five-day {
-        display: block;
-    }
-
-    .five-day-header {
-        text-align: center;
-        padding: 0.5em;
-
-    }
-
-    div .five-day-forecast{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    div .five-day-forecast div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 150px;
-    }
-
-    #preston-lake {
-        width: 60%;
-        float: right;
-        margin-left: 1em;
-    }
-
-    /* .map {
-        display: inline;
-    } */
-
     .bottom-section {
         display: grid;
         grid-template-columns: 3fr 1fr 3fr;
@@ -97,5 +50,11 @@
     /* .contact ul {
         display: inline;
     } */
+
+    #storm-center-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 
 }

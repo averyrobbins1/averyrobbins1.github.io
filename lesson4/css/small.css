@@ -147,9 +147,21 @@ main div {
     margin: 0.5em;
 }
 
-/* .weather-summary {
-    position: relative;
-} */
+#copyright,
+#today {
+    text-align: center;
+    padding-top: 0.75em;
+    font-size: 1.25em;
+}
+
+#copyright {
+    font-weight: 700;
+}
+
+main h1 {
+    display: inline;
+    text-align: center;
+}
 
 .hero-image {
     margin: 0;
@@ -160,17 +172,6 @@ main div {
 .weather-summary-list {
     list-style-type: none;
 }
-
-/* hide whole five block */
-
-/* .weather-summary article {
-    position: absolute;
-    top: 4em;
-    left: 2em;
-    padding: .5em;
-    width: 60%;
-    background: radial-gradient(rgba(119, 136, 153, .5), rgba(119, 136, 153, .8));
-} */
 
 .five-day{
     display: none;
@@ -188,20 +189,82 @@ main div {
     width: 100%;
 }
 
-#copyright,
-#today {
-    text-align: center;
-    padding-top: 0.75em;
-    font-size: 1.25em;
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 360px;
 }
 
-#copyright {
-    font-weight: 700;
+form legend {
+    color: whitesmoke;
+    margin: 0 1rem; 
 }
 
-/* #copyright-symbol {
-    font-size: 1.2em;
-} */
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: whitesmoke;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+    background-color: lightgray;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: whitesmoke;
+}
+
+form input.submit-button {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form legend.danger {
+    padding-top: 5px;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+form label.comment-box {
+    display: block;
+    padding-top: 1rem;
+}
+
+form input.comment-box {
+    height: 100px;
+    max-width: 200px;
+}
+
+#thanks-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
 
 @media only screen and (max-width: 400px) {
 
