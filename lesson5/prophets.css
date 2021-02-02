@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: lightgray;
+    color: #192841;
+    width: 90%;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 200px;
+}
+
+.cards {
+    justify-self: center;  
+}
+
+.cards section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 15px;
+}
+
+img {
+    width: 80%;
+}
+
+@media only screen and (min-width: 42em) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 62em) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
