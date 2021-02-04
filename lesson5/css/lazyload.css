@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: auto;
+}
+
+header, footer {
+    background-color: #778899;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    padding: 5px;
+  }
+

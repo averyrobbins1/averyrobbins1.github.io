@@ -1,0 +1,39 @@
+@media only screen and (min-width: 48em) {
+
+	.navigation {
+        display: flex;
+        flex-direction: row;
+    }
+    
+	.navigation li {
+		display: block; 
+        flex: 1 1 auto;
+        flex-direction: row;
+    }
+    
+	.navigation a {
+		text-align: center;
+    }
+
+    .navigation a:hover {
+        background-color: #ffffff;
+        color: #192841;
+    }
+    
+	.navigation li:first-child {
+		display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: auto;
+    }
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Anything - Storm Center</title>
+    <meta name="description" content="On the storm center page, users can submit a report about storms in their area.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="main-container">
+            <div class="hidden">
+                <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+            </div>
+            <header>
+                <div class="logo-header">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/logo-small.png">
+                        <img src="images/logo.png" alt="Logo for Weather Anything">
+                    </picture>
+
+                    <section class="headings">
+                        <h1>Weather Anything</h1>
+                        <span>There's always a silver lining!</span>
+                    </section>
+                </div>
+            </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#">&#9776;</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <main id="storm-center-main">
+                <h2>Storm Center</h2>
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5, }"
+                                required></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                                required></label>
+                        <label class="top">Phone Number* <input type="tel" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Storm Report</legend>
+                        <label class="top">Storm Date <input type="date" name="storm-date"></label>
+                        <label class="top">Storm Type <input list="storm-type" name="storm-type">
+                            <datalist id="storm-type">
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Hurricane"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist>
+                        </label>
+                        <label class="top"> Storm Severity (1-10):
+                            <input type="range" name="rating" value="5" min="1" max="10" step="1"
+                                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                        </label>
+                        <label class="top">Storm Region
+                            <select name="storm-region">
+                                <option value="">Select Region</option>
+                                <option value="Preston" id="preston">Preston</option>
+                                <option value="Soda Springs" id="soda-springs">Soda Springs</option>
+                                <option value="Fish Haven" id="fish-haven">Fish Haven</option>
+                            </select>
+                        </label>
+                        <span class="danger">User in-danger level:</span>
+                        <label class="sbs"><input type="radio" name="danger-level" value="yes"> Yes</label>
+                        <label class="sbs"><input type="radio" name="danger-level" value="maybe">
+                            Maybe</label>
+                        <label class="sbs"><input type="radio" name="danger-level" value="no"> No</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <label>Comments: <textarea name="comments" cols="30" rows="10"></textarea></label>
+                    </fieldset>
+
+                    <input type="submit" value="Send Storm Report" class="submit-button">
+                </form>
+            </main>
+        </div>
+
+        <footer>
+            <div>
+                <div id="copyright">Weather Anything <span id="copyright-symbol">&copy;</span>
+                    <span id="current-year"></span></div>
+                <div id=today></div>
+            </div>
+        </footer>
+    </div> <!-- page-container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Gallery</title>
+    <meta name="description" content="This is a weathery gallery.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery/small.css">
+    <link rel="stylesheet" href="css/gallery/medium.css">
+    <link rel="stylesheet" href="css/gallery/large.css">
+
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="main-container">
+            <header>
+                <div class="logo-header">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/logo-small.png">
+                        <img src="images/logo.png" alt="Logo for Weather Anything">
+                    </picture>
+
+                    <section class="headings">
+                        <h1>Weather Anything</h1>
+                        <span>There's always a silver lining!</span>
+                    </section>
+                </div>
+            </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#">&#9776;</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a class="active" href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather1.jpg' alt="">
+                </picture>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather2.jpg' alt="">
+                </picture>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather3.jpg' alt="">
+                </picture>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather4.jpg' alt="">
+                </picture>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather5.jpg' alt="">
+                </picture>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather6.jpg' alt="">
+                </picture>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather7.jpg' alt="">
+                </picture>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather8.jpg' alt="">
+                </picture>
+               <picture>
+                   <img src='images/placeholder-300x400.png' data-src='images/weather9.jpg' alt="">
+                </picture>
+            </main>
+        </div>
+
+        <footer>
+            <div>
+                <div id="copyright">Weather Anything <span id="copyright-symbol">&copy;</span>
+                    <span id="current-year"></span></div>
+                <div id=today></div>
+            </div>
+        </footer>
+    </div> <!-- page-container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
+</body>
+
+</html>
