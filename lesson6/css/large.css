@@ -1,0 +1,40 @@
+@media only screen and (min-width: 60em) {
+
+    nav {
+        width: 80%;
+        margin: auto;
+    }
+
+    footer {
+        width: 78%;
+        margin: auto;
+    }
+
+    main {
+        width: 80%;
+        margin: auto;
+        padding: 0.5em;
+    }
+
+    .weather-summary {
+        position: relative;
+    }
+
+    .herodiv {
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        padding: 5px;
+        background: radial-gradient(rgba(119, 136, 153, .5), rgba(119, 136, 153, .8));
+    }
+
+    .hero-image {
+        margin: 0;
+        width: 90%;
+        height: 100%;
+    }
+
+    div .five-day-forecast div{
+        min-width: 125px;
+    }
+}

@@ -2,8 +2,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
-
+    
     const desc = jsObject.weather[0].description;
     document.getElementById('description').textContent = desc;
     document.getElementById('temperature').textContent = jsObject.main.temp;
@@ -30,9 +29,9 @@ const forecast_url = "https://api.openweathermap.org/data/2.5/forecast?id=560447
 fetch(forecast_url)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
+
     const forecasts = jsObject.list.filter((item) => item.dt_txt.includes('18:00:00'))
-    console.log(forecasts);
+   
     document.querySelector('#day1-temp').innerHTML = forecasts[0].main.temp;
     document.querySelector('#day2-temp').innerHTML = forecasts[1].main.temp;
     document.querySelector('#day3-temp').innerHTML = forecasts[2].main.temp;
@@ -62,20 +61,8 @@ fetch(forecast_url)
     document.querySelector('#day3').innerHTML = date3.toDateString().split(' ')[0]
     document.querySelector('#day4').innerHTML = date4.toDateString().split(' ')[0]
     document.querySelector('#day5').innerHTML = date5.toDateString().split(' ')[0]
-
-    
-    
   })
 
-
-
-
-  // document.getElementById('current-temp').textContent = jsObject.main.temp;
-    // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    // const desc = jsObject.weather[0].description;  // note how we reference the weather array
-    // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    // document.getElementById('icon').setAttribute('alt', desc);
 
 
   

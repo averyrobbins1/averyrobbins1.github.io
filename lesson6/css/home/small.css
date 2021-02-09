@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: #192841;
+    color: #ffffff;
+    width: 100%;
+}
+
+.page-container {
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+}
+
+header, footer {
+    background-color: #778899;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+header img {
+    width: 70px;
+}
+
+header h1 {
+    font-size: 1.3em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header span {
+    text-align: center;
+}
+
+footer ul {list-style-type: none;}
+
+footer ul li {
+    margin: 1em;
+}
+
+footer ul img {
+    float: left;
+    margin-right: 1.25em;
+}
+
+footer ul li p {
+    position: relative;
+    top: 0.35em;
+}
+
+.ham {
+    font-size: 3em;
+}
+
+.logo-header {
+    display: flex;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings div {
+    font-size: 1em;
+    text-align: center;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+    padding: 1em;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.8rem;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+    font-weight: 700;
+}
+
+.responsive li {
+    display: block;
+}
+
+.navigation .active {
+    color: rgb(227, 238, 131);
+}
+
+.hidden {
+    display: none;
+    background: rgba(255, 165, 0, 1);
+    padding: 1.5em;
+}
+
+.hidden p {
+    color: maroon;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    margin: 0 auto;
+}
+
+main .cards section {
+    border: solid #f5f5f5 3px;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards #preston.jpg {
+    order: 1;
+}
+
+.cards #fishhaven.jpg {
+    order: 2;
+}
+
+.cards #sodasprings.jpg {
+    order: 3;
+}
+
+.cards img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.cards h2 {
+    padding-bottom: 5px;
+}
+
+.cards h4 {
+    padding-bottom: 20px;
+}
+
+.cards p {
+    padding: 5px;
+}
+
+#copyright,
+#today {
+    text-align: center;
+    padding-top: 0.75em;
+    font-size: 1.25em;
+}
+
+#copyright {
+    font-weight: 700;
+}
+
+main h1 {
+    display: inline;
+    text-align: center;
+}
+
+.hero-image {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+    .logo-header img {
+        display: none;
+    }
+
+    .logo-header {
+        margin: 1em;
+    }
+}
