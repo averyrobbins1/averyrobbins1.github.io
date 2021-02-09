@@ -54,13 +54,13 @@
                         <source media="(max-width: 800px)" srcset="images/hero-medium-800.jpg">
                         <img class="hero-image" src="images/hero-large-1400.jpg" alt="Preston, ID hero image.">
                     </picture>
-                    <article>
+                    <article class="herodiv">
                         <h3>Weather Summary</h3>
                         <ul class="weather-summary-list">
-                            <li>Currently: Rainy</li>
-                            <li>High: <span id="temperature">49</span>&deg;F</li>
+                            <li>Conditions: <span id="description"></span></li>
+                            <li>Temperature: <span id="temperature"></span>&deg;F</li>
                             <li>Wind Chill: <span id="wind-chill"></span>&deg;F</li>
-                            <li>Humidity: 95%</li>
+                            <li>Humidity: <span id="humidity"></span></li>
                             <li>Wind Speed: <span id="wind-speed">12</span> mph</li>
                         </ul>
                     </article>
@@ -69,29 +69,29 @@
                     <h3 class="five-day-header">Five Day Forecast</h3>
                     <section class="five-day-forecast">
                         <div>
-                            <h3>Wed</h3>
-                            <img src='images/sun.png' alt="sun">
-                            <p>89&deg;F</p>
+                            <h3><span id="day1"></span></h3>
+                            <img id="icon1" src="" alt="">
+                            <p><span id="day1-temp"></span> &deg;F</p>
                         </div>
                         <div>
-                            <h3>Thu</h3>
-                            <img src='images/sun.png' alt="sun">
-                            <p>89&deg;F</p>
+                            <h3><span id="day2"></span></h3>
+                            <img id="icon2" src="" alt="">
+                            <p><span id="day2-temp"></span> &deg;F</p>
                         </div>
                         <div>
-                            <h3>Fri</h3>
-                            <img src='images/sun.png' alt="sun">
-                            <p>89&deg;F</p>
+                            <h3><span id="day3"></span></h3>
+                            <img id="icon3" src="" alt="">
+                            <p><span id="day3-temp"></span> &deg;F</p>
                         </div>
                         <div>
-                            <h3>Sat</h3>
-                            <img src='images/sun.png' alt="sun">
-                            <p>89&deg;F</p>
+                            <h3><span id="day4"></span></h3>
+                            <img id="icon4" src="" alt="">
+                            <p><span id="day4-temp"></span> &deg;F</p>
                         </div>
                         <div>
-                            <h3>Sun</h3>
-                            <img src='images/sun.png' alt="sun">
-                            <p>89&deg;F</p>
+                            <h3><span id="day5"></span></h3>
+                            <img id="icon5" src="" alt="">
+                            <p><span id="day5-temp"></span> &deg;F</p>
                         </div>
                     </section>
                 </div>
@@ -136,7 +136,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/preston-weather-api.js"></script>
 </body>
 
 </html>
