@@ -37,4 +37,9 @@
     div .five-day-forecast div{
         min-width: 125px;
     }
+
+    #article-image {
+        width: 80%;
+        padding: 20px;
+    }
 }

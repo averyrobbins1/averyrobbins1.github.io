@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Anything - Preston</title>
+    <meta name="description" content="This is the Preston page for the Weather Anything website. It displays
+        information such as a weather summary, five day forecast, etc.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="main-container">
+            <div class="hidden">
+                <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+            </div>
+            <header>
+                <div class="logo-header">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/logo-small.png">
+                        <img src="images/logo.png" alt="Logo for Weather Anything">
+                    </picture>
+
+                    <section class="headings">
+                        <h1>Weather Anything</h1>
+                        <span>There's always a silver lining!</span>
+                    </section>
+                </div>
+            </header>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#">&#9776;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="weather-summary">
+                    <h2>Fish Haven</h2>
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/fishhaven-hero-500.jpg">
+                        <source media="(max-width: 800px)" srcset="images/fishhaven-hero-800.jpg">
+                        <img class="hero-image" src="images/fishhaven-hero-1400.jpg" alt="Fish Haven, ID hero image.">
+                    </picture>
+                    <article class="herodiv">
+                        <h3>Weather Summary</h3>
+                        <ul class="weather-summary-list">
+                            <li>Conditions: <span id="description"></span></li>
+                            <li>Temperature: <span id="temperature"></span>&deg;F</li>
+                            <li>Wind Chill: <span id="wind-chill"></span>&deg;F</li>
+                            <li>Humidity: <span id="humidity"></span></li>
+                            <li>Wind Speed: <span id="wind-speed">12</span> mph</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="five-day">
+                    <h3 class="five-day-header">Five Day Forecast</h3>
+                    <section class="five-day-forecast">
+                        <div>
+                            <h3><span id="day1"></span></h3>
+                            <img id="icon1" src="" alt="">
+                            <p><span id="day1-temp"></span> &deg;F</p>
+                        </div>
+                        <div>
+                            <h3><span id="day2"></span></h3>
+                            <img id="icon2" src="" alt="">
+                            <p><span id="day2-temp"></span> &deg;F</p>
+                        </div>
+                        <div>
+                            <h3><span id="day3"></span></h3>
+                            <img id="icon3" src="" alt="">
+                            <p><span id="day3-temp"></span> &deg;F</p>
+                        </div>
+                        <div>
+                            <h3><span id="day4"></span></h3>
+                            <img id="icon4" src="" alt="">
+                            <p><span id="day4-temp"></span> &deg;F</p>
+                        </div>
+                        <div>
+                            <h3><span id="day5"></span></h3>
+                            <img id="icon5" src="" alt="">
+                            <p><span id="day5-temp"></span> &deg;F</p>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <section class="article-section">
+                        <h3 class="article-title">Little Fish Haven, Idaho, is paradise for residents</h3>
+                        <img id="article-image" src="images/fishhaven-article-image.jpg" alt="Preston Lake">
+                        <p>FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw
+                            beauty of a place ringed by high desert mountains and bordered by the shores of a vast
+                            natural lake.
+
+                            In winter the hills outside this small paradise echo with the sharp whine of snow machines
+                            and in the summer thousands of tourists ply the lake's bright blue waters with water skis or
+                            fishing poles.
+
+                            But they don't live there. It's different living in Fish Haven.
+
+                            The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's
+                            west side and the mountains.
+
+                            It's not technically a city or a town, it's really nothing more than the proverbial wide
+                            spot in the road. But people call it a town even though there isn't a city council, just the
+                            Bear Lake County Commission that oversees development there.</p>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <div class="bottom-section">
+                <div class="contact">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><img src="images/email.png" alt="small email icon" class="contact-item">
+                            <p class="contact-item">john_doe@gmail.com</p>
+                        </li>
+                        <li><img src="images/phone.png" alt="small phone icon" class="contact-item">
+                            <p class="contact-item">888-555-5555</p>
+                        </li>
+                    </ul>
+                </div> <!-- contact -->
+                <img class="map" src="images/map_fishhaven.jpg" alt="Fish Haven map">
+            </div> <!-- bottom-section -->
+
+            <div>
+                <div id="copyright">Weather Anything <span id="copyright-symbol">&copy;</span>
+                    <span id="current-year"></span></div>
+                <div id=today></div>
+            </div>
+        </footer>
+    </div> <!-- page-container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/fishhaven-weather-api.js"></script>
+</body>
+
+</html>

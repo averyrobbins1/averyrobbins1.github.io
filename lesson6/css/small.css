@@ -182,10 +182,22 @@ main h1 {
 }
 
 #preston-lake {
-    width: 100%;
+    width: 80%;
 }
 
-.preston-map {
+.article-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#article-image {
+    width: 90%;
+    padding: 20px;
+}
+
+.map {
     width: 100%;
 }
 
