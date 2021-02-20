@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact and Additional Information</h1>
+        <nav>
+            <ul class="nav">
+                <li><a class="ham" href="#">Menu &#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-main">
+        <div id="info-services">
+            <h2>Information Services</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+        </div>
+
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119612.23430562999!2d-86.92866504407846!3d20.470025955318295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1613799999347!5m2!1sen!2sus"
+                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <form id="class-form" method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact us</legend>
+                <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5, }"
+                        required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Phone Number* <input type="tel" required></label>
+                <legend>Special Accommodations or Comments</legend>
+                <label><textarea name="comments" cols="30" rows="10"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Send Comments" class="submit-button">
+        </form>
+    </main>
+    <footer>
+        <h3><a href="https://www.facebook.com/login/web/">Follow us on social media!</a></h3>
+        <h4><a href="resources.html">See resources</a></h4>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/webfontload.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

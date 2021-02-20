@@ -1,0 +1,16 @@
+@media only screen and (min-width: 60em) {
+    .google-map {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    .google-map iframe {
+        left:0;
+        top:0;
+        height:80%;
+        width:80%;
+        position:absolute;
+    }
+}

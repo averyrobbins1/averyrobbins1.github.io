@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <h1>Reservations</h1>
+        <nav>
+            <ul class="nav">
+                <li><a class="ham" href="#">Menu &#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a class= "active" href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="reservation-main">
+        <form method="get" action="confirmation.html">
+            <fieldset>
+                <legend>Rental Agreement Information</legend>
+                <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5, }"
+                        required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Phone Number* <input type="tel" required></label>
+                <label class="top">Home Country/State <input type="text" name="country-state"></label>
+                <label class="top">Cruise Line, if applicable <input type="text" name="cruise-line"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rental Specifics</legend>
+                <label class="top">Rental Date <input type="date" name="rental-date"></label>
+                <label class="top">Rental Type
+                    <select name="rental-type">
+                        <option value="">Select Rental</option>
+                        <option value="Honda Metro Scooter" id="Honda Metro Scooter">Honda Metro Scooter</option>
+                        <option value="Honda Dio Scooter" id="Honda Dio Scooter">Honda Dio Scooter</option>
+                        <option value="Honda PCX150 Scooter" id="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                        <option value="Honda Pioneer ATV" id="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                        <option value="Jeep Wrangler—4 door with a/c" id="Jeep Wrangler—4 door with a/c">Jeep Wrangler—4 door with a/c</option>
+                        <option value="Jeep Wrangler—2 door" id="Jeep Wrangler—2 door">Jeep Wrangler—2 door</option>
+                    </select>
+                </label>
+                <span class="danger">Rental Period</span>
+                <label class="sbs"><input type="radio" name="period" value="full"> Full Day</label>
+                <label class="sbs"><input type="radio" name="period" value="half"> Half Day</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Accommodations or Comments</legend>
+                <label><textarea name="comments" cols="30" rows="10"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Confirm Reservation" class="submit-button">
+        </form>
+    </main>
+    <footer>
+        <h3><a href="https://www.facebook.com/login/web/">Follow us on social media!</a></h3>
+        <h4><a href="resources.html">See resources</a></h4>
+    </footer>
+
+    <!-- JavaScript -->
+<script src="js/webfontload.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>

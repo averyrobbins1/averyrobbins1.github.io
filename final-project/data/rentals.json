@@ -1,0 +1,147 @@
+[{
+    "Rental": "Honda Metro Scooter",
+    "Persons": 1,
+    "Length": "halfday",
+    "Type": "reservation",
+    "Price": 20
+},
+{
+    "Rental": "Honda Metro Scooter",
+    "Persons": 1,
+    "Length": "fullday",
+    "Type": "reservation",
+    "Price": 30
+}, {
+    "Rental": "Honda Metro Scooter",
+    "Persons": 1,
+    "Length": "halfday",
+    "Type": "walkin",
+    "Price": 25
+}, {
+    "Rental": "Honda Metro Scooter",
+    "Persons": 1,
+    "Length": "fullday",
+    "Type": "walkin",
+    "Price": 35
+}, {
+    "Rental": "Honda Dio Scooter",
+    "Persons": 2,
+    "Length": "halfday",
+    "Type": "reservation",
+    "Price": 30
+}, {
+    "Rental": "Honda Dio Scooter",
+    "Persons": 2,
+    "Length": "fullday",
+    "Type": "reservation",
+    "Price": 40
+}, {
+    "Rental": "Honda Dio Scooter",
+    "Persons": 2,
+    "Length": "halfday",
+    "Type": "walkin",
+    "Price": 35
+}, {
+    "Rental": "Honda Dio Scooter",
+    "Persons": 2,
+    "Length": "fullday",
+    "Type": "walkin",
+    "Price": 45
+}, {
+    "Rental": "Honda PCX150 Scooter",
+    "Persons": 2,
+    "Length": "halfday",
+    "Type": "reservation",
+    "Price": 40
+}, {
+    "Rental": "Honda PCX150 Scooter",
+    "Persons": 2,
+    "Length": "fullday",
+    "Type": "reservation",
+    "Price": 50
+}, {
+    "Rental": "Honda PCX150 Scooter",
+    "Persons": 2,
+    "Length": "halfday",
+    "Type": "walkin",
+    "Price": 45
+}, {
+    "Rental": "Honda PCX150 Scooter",
+    "Persons": 2,
+    "Length": "fullday",
+    "Type": "walkin",
+    "Price": 55
+}, {
+    "Rental": "Honda Pioneer ATV",
+    "Persons": 4,
+    "Length": "halfday",
+    "Type": "reservation",
+    "Price": 50
+}, {
+    "Rental": "Honda Pioneer ATV",
+    "Persons": 4,
+    "Length": "fullday",
+    "Type": "reservation",
+    "Price": 70
+}, {
+    "Rental": "Honda Pioneer ATV",
+    "Persons": 4,
+    "Length": "halfday",
+    "Type": "walkin",
+    "Price": 60
+}, {
+    "Rental": "Honda Pioneer ATV",
+    "Persons": 4,
+    "Length": "fullday",
+    "Type": "walkin",
+    "Price": 80
+}, {
+    "Rental": "Jeep Wrangler—4 door with a/c",
+    "Persons": 5,
+    "Length": "halfday",
+    "Type": "reservation",
+    "Price": 70
+}, {
+    "Rental": "Jeep Wrangler—4 door with a/c",
+    "Persons": 5,
+    "Length": "fullday",
+    "Type": "reservation",
+    "Price": 100
+}, {
+    "Rental": "Jeep Wrangler—4 door with a/c",
+    "Persons": 5,
+    "Length": "halfday",
+    "Type": "walkin",
+    "Price": 85
+}, {
+    "Rental": "Jeep Wrangler—4 door with a/c",
+    "Persons": 5,
+    "Length": "fullday",
+    "Type": "walkin",
+    "Price": 125
+}, {
+    "Rental": "Jeep Wrangler—2 door",
+    "Persons": 4,
+    "Length": "halfday",
+    "Type": "reservation",
+    "Price": 60
+}, {
+    "Rental": "Jeep Wrangler—2 door",
+    "Persons": 4,
+    "Length": "fullday",
+    "Type": "reservation",
+    "Price": 85
+}, {
+    "Rental": "Jeep Wrangler—2 door",
+    "Persons": 4,
+    "Length": "halfday",
+    "Type": "walkin",
+    "Price": 70
+}, {
+    "Rental": "Jeep Wrangler—2 door",
+    "Persons": 4,
+    "Length": "fullday",
+    "Type": "walkin",
+    "Price": 90
+}
+]

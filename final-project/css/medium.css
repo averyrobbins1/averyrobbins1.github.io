@@ -1,0 +1,61 @@
+@media only screen and (min-width: 48em) {
+
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .tours-main {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+    }
+
+    .tours h2 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .tours a {
+        
+    }
+
+    .tours img {
+        width: 100%;
+    }
+
+    .reservation-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .rentals-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .rentals-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 30px;
+    }
+
+    .google-map {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    .google-map iframe {
+        left:0;
+        top:0;
+        height:80%;
+        width:80%;
+        position:absolute;
+    }
+}
